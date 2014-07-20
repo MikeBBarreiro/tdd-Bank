@@ -52,4 +52,10 @@ describe('Account', function(){
         expect(sara.active).to.equal(false);
     });
   }); 
+  describe('#money', function(){
+    it('Should tell total ammount of money put towards this account', function(){
+      var sara = new Account(3, 'Sara', 6500, 'Savings');
+      expect(sara.money).to.equal(6500);
+    });
+  });
 });

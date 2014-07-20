@@ -9,6 +9,7 @@ function Account(number, name, deposit, type){
   this.withdrawls = [];
   this.fees = 0;
   this.active = true;
+  this.money = 6500;
 }
 
 Account.prototype.deposit = function(amount){
